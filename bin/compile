@@ -22,3 +22,8 @@ fi
 
 make
 echo "-----> Compilation done"
+
+if [-f autorun.sh]; then
+   echo "-----> Running autorun.sh"
+   ./autorun.sh 2>&1 | indent
+fi
